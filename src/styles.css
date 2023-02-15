@@ -1,0 +1,55 @@
+.wrap {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.photo-card {
+    flex-basis: calc((100% - 45px) / 4);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.load-more {
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+button.hidden {
+  display: none;
+}
+
+button.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

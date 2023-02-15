@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>Homework 11</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <div class="page-header">
+    <div class="wrap">
       <form class="search-form" id="search-form">
         <input
           type="text"
-          name="searchQuery"
+          name="search"
           autocomplete="off"
           placeholder="Search images..."
-          class="input"
         />
         <button type="submit">Search</button>
       </form>
     </div>
-    <div class="gallery"></div>
-    <button type="button" class="is-hidden load-more">Load more</button>
-    <script src="index.js" type="module"></script>
+    <div class="container">
+      <div class="gallery"></div>
+      <button type="button" class="load-more" disabled>Load more</button>
+    </div>
   </body>
 </html>
